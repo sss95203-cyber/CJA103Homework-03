@@ -29,7 +29,7 @@ public class hw4_6 {
             }
         }
 
-        // 再找出誰有拿到這個最高分（可能有並列）
+        // 最高分
         for (int student = 0; student < scores.length; student++) {
             if (scores[student][exam] == max) {
                 top[student]++;
@@ -37,7 +37,6 @@ public class hw4_6 {
         }
     }
 
-    // 顯示結果
     for (int i = 0; i < top.length; i++) {
         System.out.println("學生 " + (i + 1) + " 最高分次數: " + top[i]);
     }
